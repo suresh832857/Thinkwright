@@ -1,0 +1,270 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+background-color: white;    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+}
+
+.logo-card img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} */
+
+
+/* Contact Section */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        text-align: center;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        display: flex; /* This ensures it appears when toggled */
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 850px;
+height: 470px;    
+margin-top: 100px;
+    /* margin-bottom: 50px; */
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-box textarea {
+    resize: none;
+    height: 100px;
+}
+
+.btn {
+    background: #1fbad8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #027e92;
+}
+.contact-info{
+    height: max-content;
+   width: 900px;
+   margin-top: 10px;
+}
+.get-in{
+    /* color: rgb(51, 93, 94); */
+    font-family:cursive;
+    color: #1fbad8;
+}
+.social-links{
+color: black;}
+.social-icons {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; /* Arrange icons vertically */
+    /* align-items: center; Center align the icons */
+    gap: 10px; /* Space between icons */
+    position: fixed;
+    left: 6px; /* Adjust for left alignment, change to right: 10px; for right alignment */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+.input-box{
+  margin-left: 15px;
+  border-radius: 45px;
+}
+/* Popup Background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 97, 97, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: black !important;
+    font-family: cursive !important;
+}
+
+/* Popup Box */
+.popup-content {
+    background: rgb(106, 104, 104) !important;
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeInZoom 0.3s ease-in-out;
+    color: rgb(150, 239, 117) !important;
+    font-family: cursive !important;
+}
+.Thank{
+    color: rgb(138, 219, 213);
+    font-family: cursive;
+    font-size: 60px;
+}
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Popup Button */
+/* Popup Box - Make Background Dark */
+.popup-content {
+    background: #77e66d; /* Change to light gray or another color if needed */
+    color: #333; /* Dark text for better contrast */
+    padding: 30px;
+    width: 600px;
+    height: 400px !important;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeInZoom 0.6s ease-in-out;
+    font-family: cursive !important;
+   padding-top: 14% !important;
+}
+
+/* Popup Button - Fix Text Color */
+.popup-content button {
+    background: #ffffff; /* Blue button */
+    color: rgb(104, 226, 97); /* White text */
+    font-weight: bold; /* Make it stand out */
+    border-radius: 5px;
+}
+
+/* Close Button */
+.close-btn {
+    color: rgb(59, 12, 12); /* Make close button visible */
+}
+.popup-content {
+    background: #f9f9f9;
+    border: 1px solid #e2ebdd;              
+}
+

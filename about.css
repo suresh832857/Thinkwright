@@ -1,0 +1,102 @@
+.navbar{
+    background-color: white;
+}
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+    backdrop-filter: blur(10px);
+    /* background: rgba(0, 0, 0, 0.6); */
+    background-color: transparent;
+    margin: 0px auto;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 2000px; 
+    height: 100%;
+    /* margin-bottom: px; */
+}
+
+.about-section h1 {
+    font-size: 40px;
+    font-weight: 600;
+    /* margin-bottom: 20px; */
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Cards */
+.card {
+ background-color: transparent !important;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 30px;
+    width: 300px;
+    height: 400px !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgb(255, 253, 253);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Icons */
+.card .icon {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    color: white;
+}
+
+.slide-up {
+    animation: slideUp 4s ease-in-out forwards;
+}

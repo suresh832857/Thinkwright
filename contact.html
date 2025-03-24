@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ThinkWright</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="demo.html">
+    <link rel="icon" type="image/x-icon" href="c:\Users\user\Downloads\tw_logo-removebg-preview.png">
+
+    <link rel="stylesheet" href="services.html">
+    <link rel="stylesheet" href="training-rooms.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="webnars.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-card">
+            <img src="https://thinkwright.in/assets/img/2018/09/logo_thinkwright_dark.png" alt="Logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="demo.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="training-rooms.html">Training rooms/ Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="webnars.html">Webinars</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+
+<!-- Contact Section -->
+<div class="container">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you. Feel free to reach out!</p>
+
+    <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-box">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="popupMessage" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">❌</span>
+                <h2 class="Thank">Thank You!</h2>
+                <p>Your message has been received. We will get back to you soon!</p>
+                <button onclick="closePopup()">OK   </button>
+            </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3 class="get-in">Get in Touch</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Whitefield, Hyderabad</p>
+            <p><i class="fas fa-phone"></i> +91-9606054112</p>
+            <p><i class="fas fa-envelope"></i> support@thinkwright.in</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpage" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" class="social-icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- <script src="contact.js"></script> -->
+    <script src="demo.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
